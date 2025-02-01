@@ -63,7 +63,7 @@ def main():
         help="Insira os requisitos desejáveis."
     )
     personal_tech_stack = st.text_area(
-        "Sua Tech Stack", height=100, 
+        "Sua Tech Stack / Currículo", height=100, 
         help="Insira suas tecnologias e habilidades."
     )
     
