@@ -76,6 +76,7 @@ def main():
                 result_text = generate_text_openai(job_description, mandatory_requirements, preferred_requirements, personal_tech_stack)
             st.subheader("Texto Gerado")
             st.text_area("Texto para Copiar", value=result_text, height=200)
+            st.text(f"Total de caracteres: {len(result_text)}")
 
 if __name__ == '__main__':
     main()
