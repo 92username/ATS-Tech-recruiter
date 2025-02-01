@@ -16,6 +16,15 @@ Crie um texto com até 1500 caracteres que combine as informações abaixo, otim
     """
     if language == "Português - BR":
         prompt = f"""
+Você é um assistente especializado em gerar textos para candidaturas de emprego. 
+Crie um texto com aproximadamente 1500 caracteres que combine as informações abaixo, otimizando-o para passar por sistemas ATS e destacando palavras-chave importantes:
+
+- Descrição da Vaga: {job_description}
+- Requisitos Obrigatórios: {mandatory_requirements}
+- Requisitos Desejáveis: {preferred_requirements}
+- Tech Stack do Candidato: {personal_tech_stack}
+
+Gere um texto fluido, coerente e otimizado.
         """
     else:
         prompt = f"""
