@@ -29,7 +29,7 @@
      - After clicking a button, the final text is displayed on the screen.  
    - **Internal Structure**:  
      - **Python** will handle string processing and data organization (list comprehensions, text manipulation functions, etc.).  
-     - Native modules such as `re` (for regular expressions) and `textwrap` (for text handling) can be used if needed.  
+     ~~ - Native modules such as `re` (for regular expressions) and `textwrap` (for text handling) can be used if needed.~~
    - **Character Limit Control**:  
      - A dedicated function to check the final text size.  
    - **Future Improvements**:  
