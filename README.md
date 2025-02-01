@@ -6,8 +6,6 @@ ATS Tech Recruiter é uma aplicação desenvolvida em **Python** utilizando **St
 - **Python 3.x** - Linguagem principal da aplicação
 - **Streamlit** - Framework para interface gráfica
 - **OpenAI API (GPT-4o)** - Modelo de IA para geração de texto
-- **dotenv** - Gerenciamento de variáveis de ambiente
-- **pip** - Gerenciamento de pacotes
 
 ---
 
