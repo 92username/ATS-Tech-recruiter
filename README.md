@@ -31,16 +31,26 @@ venv\Scripts\activate      # Para Windows
 pip install -r requirements.txt
 ```
 
-### 4. Configurar a API da OpenAI
-A aplicação requer uma **chave de API** da OpenAI. Para utilizá-la, crie um arquivo `.env` na raiz do projeto e insira suas credenciais:
+Aqui está a versão atualizada do seu README com um **ícone de atenção ⚠️** no título e uma **nota em destaque**.
+
+---
+
+### **📝 Nova versão do README**
+```md
+## ⚠️ 4. Configurar a API da OpenAI
+
+A aplicação requer uma **chave de API** da OpenAI. Para utilizá-la, crie um arquivo **`.env`** na raiz do projeto e insira suas credenciais:
 
 ```ini
 OPENAI_API_KEY=sua-chave-aqui
 OPENAI_MODEL=gpt-4o  # Alterável para outros modelos compatíveis
 ```
 
+> **💡 Nota:** Se o `.env` não for configurado corretamente, a aplicação não conseguirá acessar a API da OpenAI. Caso ocorra um erro `"missing API key"`, verifique se a chave foi adicionada corretamente e se o arquivo `.env` está salvo na raiz do projeto.
+
 Se ainda não possui uma chave, obtenha uma conta e gere uma chave de API em:  
 [https://platform.openai.com/signup](https://platform.openai.com/signup)
+```
 
 ### 5. Executar o aplicativo
 ```bash
