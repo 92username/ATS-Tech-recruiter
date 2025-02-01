@@ -76,7 +76,7 @@ Modelos disponíveis:
 - `gpt-4-turbo` - Opção mais eficiente em custo e tempo de resposta
 - `gpt-3.5-turbo` - Alternativa mais econômica, porém menos precisa
 
-Para confirmar qual modelo está sendo utilizado, a interface exibe essa informação no final da página.
+Para confirmar qual modelo está sendo utilizado, a interface exibe essa informação no início da página.
 
 ---
 
@@ -93,23 +93,6 @@ Solução: Acesse manualmente pelo link `http://localhost:8501/`.
 
 ---
 
-## Licença
-Este projeto está licenciado sob a **MIT License**.
-
----
-
 ## Contato
-Desenvolvido por [92username](https://github.com/92username).  
+  
 Dúvidas ou sugestões podem ser enviadas via **GitHub Issues**.
-```
-
----
-
-### **O que mudou nesta versão?**
-- **Removidos todos os emojis**
-- **Foco em abordagem técnica e profissional**
-- **Maior clareza na seção de ferramentas utilizadas**
-- **Explicação objetiva de instalação e uso**
-- **Estrutura mais organizada e formal**
-
-Se precisar de mais ajustes ou quiser incluir uma seção extra, só avisar.
