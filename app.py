@@ -59,7 +59,7 @@ def main():
         st.session_state["generated_count"] = 0
 
     # Botão switch no topo para escolher a interface
-    language = st.selectbox("Escolha o idioma / Choose the language", ["Português - BR", "English - US"])
+    language = st.selectbox("Escolha o idioma / Choose the language", ["Português", "English"])
 
     if language == "Português - BR":
         st.title("Gerador de Texto ATS-Friendly com ChatGPT-4o")
