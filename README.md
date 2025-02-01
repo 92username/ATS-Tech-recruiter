@@ -42,7 +42,6 @@ OPENAI_MODEL=gpt-4o  # Alterável para outros modelos compatíveis
 
 Se ainda não possui uma chave, obtenha uma conta e gere uma chave de API em:  
 [https://platform.openai.com/signup](https://platform.openai.com/signup)
-```
 
 ### 5. Executar o aplicativo
 ```bash
