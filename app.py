@@ -51,7 +51,7 @@ def main():
     
     # Entradas dos dados
     job_description = st.text_area(
-        "Descrição da Vaga", height=150, 
+        "Descrição da Vaga / Requisitos e atribuições", height=150, 
         help="Insira a descrição da vaga com as principais responsabilidades."
     )
     mandatory_requirements = st.text_area(
