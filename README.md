@@ -29,11 +29,6 @@ venv\Scripts\activate      # Para Windows
 pip install -r requirements.txt
 ```
 
-Aqui está a versão atualizada do seu README com um **ícone de atenção ⚠️** no título e uma **nota em destaque**.
-
----
-
-```md
 ## ⚠️ 4. Configurar a API da OpenAI
 
 A aplicação requer uma **chave de API** da OpenAI. Para utilizá-la, crie um arquivo **`.env`** na raiz do projeto e insira suas credenciais:
