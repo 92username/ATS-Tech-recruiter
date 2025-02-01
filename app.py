@@ -5,17 +5,19 @@ import os
 
 # Carrega as variáveis de ambiente do arquivo .env
 load_dotenv()
+load_dotenv(override=True)
 
 # Obtém a chave da API OpenAI do arquivo .env
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
+st.write(f"🔍 Modelo carregado: `{OPENAI_MODEL}`")
 
 def generate_text_openai(job_description, mandatory_requirements, preferred_requirements, personal_tech_stack, language):
     """
     Você é um assistente especializado em gerar textos para candidaturas de emprego. 
 Crie um texto com até 1500 caracteres que combine as informações abaixo, otimizando-o para passar por sistemas ATS e destacando palavras-chave importantes:
     """
-    if language == "Português - BR":
+    if language == "Português":
         prompt = f"""
 Você é um assistente especializado em gerar textos para candidaturas de emprego. 
 Crie um texto com aproximadamente 1500 caracteres que combine as informações abaixo, otimizando-o para passar por sistemas ATS e destacando palavras-chave importantes:
@@ -25,7 +27,7 @@ Crie um texto com aproximadamente 1500 caracteres que combine as informações a
 - Requisitos Desejáveis: {preferred_requirements}
 - Tech Stack do Candidato: {personal_tech_stack}
 
-Gere um texto fluido, coerente e otimizado.
+Gere um texto fluido, coerente e otimizado.  A linguagem deve ser português - BR.
         """
     else:
         prompt = f"""
@@ -37,7 +39,7 @@ Create a text with approximately 1500 characters that combines the information b
 - Preferred Requirements: {preferred_requirements}
 - Candidate's Tech Stack: {personal_tech_stack}
 
-Generate a fluid, coherent, and optimized text.
+Generate a fluid, coherent, and optimized text.  The language must be English,
         """
     
     try:
@@ -61,8 +63,9 @@ def main():
 
     # Botão switch no topo para escolher a interface
     language = st.selectbox("Escolha o idioma / Choose the language", ["Português", "English"])
+    st.write(f"🌍 Idioma selecionado: `{language}`")
 
-    if language == "Português - BR":
+    if language == "Português":
         st.title("Gerador de Texto ATS-Friendly com ChatGPT-4o")
         st.markdown(
             "Preencha os campos abaixo com as informações da vaga e seu tech stack. "
@@ -129,7 +132,8 @@ def main():
             st.subheader("Texto Gerado" if language == "Português - BR" else "Generated Text")
             st.text_area("Texto para Copiar" if language == "Português - BR" else "Text to Copy", value=result_text, height=800)
             st.text(f"Total de caracteres: {len(result_text)}" if language == "Português - BR" else f"Total characters: {len(result_text)}")
-
+            st.markdown("---")  # Linha divisória para separação
+            st.markdown(f"**🔍 Modelo de IA carregado:** `{OPENAI_MODEL}`")
             # Incrementa o contador de currículos gerados
             st.session_state["generated_count"] += 1
 
