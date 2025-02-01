@@ -90,9 +90,5 @@ Solução: Confirme que a chave da OpenAI foi corretamente inserida no `.env`.
 
 ### Streamlit não abre no navegador
 Solução: Acesse manualmente pelo link `http://localhost:8501/`.
-
----
-
-## Contato
   
 Dúvidas ou sugestões podem ser enviadas via **GitHub Issues**.
