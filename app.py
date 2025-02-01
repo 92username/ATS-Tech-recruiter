@@ -8,6 +8,7 @@ load_dotenv()
 
 # Obtém a chave da API OpenAI do arquivo .env
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
 
 def generate_text_openai(job_description, mandatory_requirements, preferred_requirements, personal_tech_stack, language):
     """
@@ -42,7 +43,7 @@ Generate a fluid, coherent, and optimized text.
     try:
         client = OpenAI(api_key=OPENAI_API_KEY)
         completion = client.chat.completions.create(
-            model="gpt-4o",
+            model=OPENAI_MODEL,
             messages=[
                 {"role": "system", "content": "Você é um assistente que gera textos otimizados para candidaturas de emprego."},
                 {"role": "user", "content": prompt}
