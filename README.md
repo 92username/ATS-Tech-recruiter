@@ -35,7 +35,6 @@ Aqui está a versão atualizada do seu README com um **ícone de atenção ⚠�
 
 ---
 
-### **📝 Nova versão do README**
 ```md
 ## ⚠️ 4. Configurar a API da OpenAI
 
