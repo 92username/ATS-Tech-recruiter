@@ -1,7 +1,11 @@
+"""
+Este módulo implementa um gerador de textos ATS-Friendly usando Streamlit e OpenAI.
+Ele recebe informações de uma vaga de emprego e retorna um texto otimizado.
+"""
 import streamlit as st
-from openai import OpenAI
-from dotenv import load_dotenv
 import os
+import openai
+from dotenv import load_dotenv
 
 # Carrega as variáveis de ambiente do arquivo .env
 load_dotenv()
@@ -14,8 +18,17 @@ st.write(f"🔍 Modelo carregado: `{OPENAI_MODEL}`")
 
 def generate_text_openai(job_description, mandatory_requirements, preferred_requirements, personal_tech_stack, language):
     """
-    Você é um assistente especializado em gerar textos para candidaturas de emprego. 
-Crie um texto com até 1500 caracteres que combine as informações abaixo, otimizando-o para passar por sistemas ATS e destacando palavras-chave importantes:
+    Gera um texto ATS-Friendly baseado nas informações fornecidas.
+
+    Parâmetros:
+    - job_description (str): Descrição da vaga
+    - mandatory_requirements (str): Requisitos obrigatórios
+    - preferred_requirements (str): Requisitos desejáveis
+    - personal_tech_stack (str): Tech stack do candidato
+    - language (str): Idioma ("Português" ou "English")
+
+    Retorna:
+    - str: Texto gerado otimizado para ATS
     """
     if language == "Português":
         prompt = f"""
@@ -43,7 +56,7 @@ Generate a fluid, coherent, and optimized text.  The language must be English,
         """
     
     try:
-        client = OpenAI(api_key=OPENAI_API_KEY)
+        client = openai.OpenAI(api_key=OPENAI_API_KEY)
         completion = client.chat.completions.create(
             model=OPENAI_MODEL,
             messages=[
@@ -53,8 +66,12 @@ Generate a fluid, coherent, and optimized text.  The language must be English,
         )
         generated_text = completion.choices[0].message.content 
         return generated_text
-    except Exception as e:
-        return f"Erro na chamada da API: {str(e)}"
+    except openai.error.OpenAIError as e:  # Captura apenas erros da API OpenAI
+        return f"Erro na API OpenAI: {str(e)}"
+    except ValueError as e:  # Captura erros específicos de conversão
+        return f"Erro de valor inválido: {str(e)}"
+    except KeyError as e:  # Captura erros de chave ausente no dicionário
+        return f"Erro ao acessar resposta da API: {str(e)}"
 
 def main():
     # Inicializa o contador de currículos, se ainda não estiver definido
