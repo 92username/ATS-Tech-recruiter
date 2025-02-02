@@ -18,7 +18,6 @@ ATS Tech Recruiter é uma aplicação desenvolvida em **Python** utilizando **St
 
 > **Nota:** Caso a aplicação não funcione por causa dos créditos da API da OpenAI terem se esgotado, rode localmente utilizando sua própria chave da API. Instruções de como rodar localmente a seguir.
 
-
 ### 1. Clonar o repositório
 
 ```bash
