@@ -1,4 +1,5 @@
 [![Pylint](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/pylint.yml/badge.svg)](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/pylint.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5af46814f5704138a7066c1d23abf174)](https://app.codacy.com/gh/92username/ATS-Tech-recruiter/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 # ATS Tech Recruiter - Gerador de Textos ATS-Friendly com OpenAI GPT-4o
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
@@ -94,12 +95,15 @@ Para confirmar qual modelo está sendo utilizado, a interface exibe essa informa
 ## Possíveis Problemas e Soluções
 
 ### Erro: `"invalid model ID"`
+
 Solução: Verifique se o modelo no `.env` está correto e disponível para sua conta OpenAI.
 
 ### Erro: `"missing API key"`
+
 Solução: Confirme que a chave da OpenAI foi corretamente inserida no `.env`.
 
 ### Streamlit não abre no navegador
+
 Solução: Acesse manualmente pelo link `http://localhost:8501/`.
   
 Dúvidas ou sugestões podem ser enviadas via **GitHub Issues**.
