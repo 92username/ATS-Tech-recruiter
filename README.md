@@ -1,4 +1,5 @@
 [![Pylint](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/pylint.yml/badge.svg)](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/pylint.yml)
+
 # ATS Tech Recruiter - Gerador de Textos ATS-Friendly com OpenAI GPT-4o
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
@@ -6,6 +7,7 @@
 ATS Tech Recruiter é uma aplicação desenvolvida em **Python** utilizando **Streamlit** para interface gráfica e **OpenAI GPT-4o** para a geração de textos. O objetivo é auxiliar candidatos na criação de textos otimizados para processos seletivos, focando em sistemas de triagem automática de currículos (**ATS - Applicant Tracking System**).
 
 ## Tecnologias Utilizadas
+
 - **Python 3.x** - Linguagem principal da aplicação
 - **Streamlit** - Framework para interface gráfica
 - **OpenAI API (GPT-4o)** - Modelo de IA para geração de texto
@@ -15,12 +17,14 @@ ATS Tech Recruiter é uma aplicação desenvolvida em **Python** utilizando **St
 ## Instalação e Configuração
 
 ### 1. Clonar o repositório
+
 ```bash
 git clone https://github.com/92username/ATS-Tech-recruiter.git
 cd ATS-Tech-recruiter
 ```
 
 ### 2. Criar ambiente virtual (opcional, mas recomendado)
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # Para Linux/macOS
@@ -28,6 +32,7 @@ venv\Scripts\activate      # Para Windows
 ```
 
 ### 3. Instalar dependências
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -47,6 +52,7 @@ Se ainda não possui uma chave, obtenha uma conta e gere uma chave de API em:
 [https://platform.openai.com/signup](https://platform.openai.com/signup)
 
 ### 5. Executar o aplicativo
+
 ```bash
 streamlit run app.py
 ```
@@ -55,6 +61,7 @@ O Streamlit abrirá automaticamente a interface no navegador.
 ---
 
 ## Uso da Aplicação
+
 1. Escolha o **idioma** no topo da interface (Português ou Inglês).
 2. Preencha os campos obrigatórios:
    - **Descrição da Vaga**
@@ -68,7 +75,9 @@ O Streamlit abrirá automaticamente a interface no navegador.
 ---
 
 ## Personalização
+
 ### Alterar o Modelo da OpenAI
+
 Caso queira testar outro modelo, basta modificar o arquivo `.env`:
 ```ini
 OPENAI_MODEL=gpt-4-turbo
