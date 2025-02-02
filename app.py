@@ -91,7 +91,17 @@ Gere um texto fluido, coerente e otimizado.  A linguagem deve ser português - B
 
 
 def main():
-    # Inicializa o contador de currículos, se ainda não estiver definido
+    """
+    Função principal que inicializa e gerencia a interface Streamlit para geração de textos ATS-Friendly.
+
+    - Configura o idioma da interface (Português ou Inglês).
+    - Exibe campos de entrada para descrição da vaga, requisitos e tecnologia utilizada pelo candidato.
+    - Processa a entrada do usuário e chama a API OpenAI para gerar o texto otimizado.
+    - Apresenta o resultado formatado com contador de caracteres e modelo de IA utilizado.
+    - Mantém um contador de currículos gerados usando `st.session_state`.
+
+    Não possui parâmetros explícitos e não retorna valores diretamente, pois a interface é gerenciada pelo Streamlit.
+    """
     if "generated_count" not in st.session_state:
         st.session_state["generated_count"] = 0
 
