@@ -82,6 +82,7 @@ Caso queira testar outro modelo, basta modificar o arquivo `.env`:
 OPENAI_MODEL=gpt-4-turbo
 ```
 Modelos disponíveis:
+
 - `gpt-4o` - Modelo mais avançado e rápido
 - `gpt-4-turbo` - Opção mais eficiente em custo e tempo de resposta
 - `gpt-3.5-turbo` - Alternativa mais econômica, porém menos precisa
