@@ -2,8 +2,8 @@
 Este módulo implementa um gerador de textos ATS-Friendly usando Streamlit e OpenAI.
 Ele recebe informações de uma vaga de emprego e retorna um texto otimizado.
 """
-import streamlit as st
 import os
+import streamlit as st
 import openai
 from dotenv import load_dotenv
 
