@@ -6,8 +6,6 @@ Ele recebe informações de uma vaga de emprego e retorna um texto otimizado.
 import os
 import streamlit as st
 import openai
-from openai.error import OpenAIError 
-
 from dotenv import load_dotenv
 
 # Carrega as variáveis de ambiente do arquivo .env
@@ -84,7 +82,7 @@ Gere um texto fluido, coerente e otimizado.  A linguagem deve ser português - B
         )
         generated_text = completion.choices[0].message.content
         return generated_text
-    except openai.error.OpenAIError as e:  # Captura apenas erros da API OpenAI
+    except openai.error.OpenAIError as e:  # pylint: disable=E1101
         return f"Erro na API OpenAI: {str(e)}"
     except ValueError as e:  # Captura erros específicos de conversão
         return f"Erro de valor inválido: {str(e)}"
