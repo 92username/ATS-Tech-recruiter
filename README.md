@@ -3,18 +3,18 @@
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
 
-ATS Tech Recruiter Ã© uma aplicaÃ§Ã£o desenvolvida em **Python** utilizando **Streamlit** para interface grÃ¡fica e **OpenAI GPT-4o** para a geraÃ§Ã£o de textos. O objetivo Ã© auxiliar candidatos na criaÃ§Ã£o de textos otimizados para processos seletivos, focando em sistemas de triagem automÃ¡tica de currÃ­culos (**ATS - Applicant Tracking System**).
+ATS Tech Recruiter é uma aplicação desenvolvida em **Python** utilizando **Streamlit** para interface gráfica e **OpenAI GPT-4o** para a geração de textos. O objetivo é auxiliar candidatos na criação de textos otimizados para processos seletivos, focando em sistemas de triagem automática de currículos (**ATS - Applicant Tracking System**).
 
 ## Tecnologias Utilizadas
-- **Python 3.x** - Linguagem principal da aplicaÃ§Ã£o
-- **Streamlit** - Framework para interface grÃ¡fica
-- **OpenAI API (GPT-4o)** - Modelo de IA para geraÃ§Ã£o de texto
+- **Python 3.x** - Linguagem principal da aplicação
+- **Streamlit** - Framework para interface gráfica
+- **OpenAI API (GPT-4o)** - Modelo de IA para geração de texto
 
 ---
 
-## InstalaÃ§Ã£o e ConfiguraÃ§Ã£o
+## Instalação e Configuração
 
-### 1. Clonar o repositÃ³rio
+### 1. Clonar o repositório
 ```bash
 git clone https://github.com/92username/ATS-Tech-recruiter.git
 cd ATS-Tech-recruiter
@@ -27,70 +27,70 @@ source venv/bin/activate  # Para Linux/macOS
 venv\Scripts\activate      # Para Windows
 ```
 
-### 3. Instalar dependÃªncias
+### 3. Instalar dependências
 ```bash
 pip install -r requirements.txt
 ```
 
-## â ï¸ 4. Configurar a API da OpenAI
+## ⚠️ 4. Configurar a API da OpenAI
 
-A aplicaÃ§Ã£o requer uma **chave de API** da OpenAI. Para utilizÃ¡-la, crie um arquivo **`.env`** na raiz do projeto e insira suas credenciais:
+A aplicação requer uma **chave de API** da OpenAI. Para utilizá-la, crie um arquivo **`.env`** na raiz do projeto e insira suas credenciais:
 
 ```ini
 OPENAI_API_KEY=sua-chave-aqui
-OPENAI_MODEL=gpt-4o  # AlterÃ¡vel para outros modelos compatÃ­veis
+OPENAI_MODEL=gpt-4o  # Alterável para outros modelos compatíveis
 ```
 
-> **ð¡ Nota:** Se o `.env` nÃ£o for configurado corretamente, a aplicaÃ§Ã£o nÃ£o conseguirÃ¡ acessar a API da OpenAI. Caso ocorra um erro `"missing API key"`, verifique se a chave foi adicionada corretamente e se o arquivo `.env` estÃ¡ salvo na raiz do projeto.
+> **💡 Nota:** Se o `.env` não for configurado corretamente, a aplicação não conseguirá acessar a API da OpenAI. Caso ocorra um erro `"missing API key"`, verifique se a chave foi adicionada corretamente e se o arquivo `.env` está salvo na raiz do projeto.
 
-Se ainda nÃ£o possui uma chave, obtenha uma conta e gere uma chave de API em:  
+Se ainda não possui uma chave, obtenha uma conta e gere uma chave de API em:  
 [https://platform.openai.com/signup](https://platform.openai.com/signup)
 
 ### 5. Executar o aplicativo
 ```bash
 streamlit run app.py
 ```
-O Streamlit abrirÃ¡ automaticamente a interface no navegador.
+O Streamlit abrirá automaticamente a interface no navegador.
 
 ---
 
-## Uso da AplicaÃ§Ã£o
-1. Escolha o **idioma** no topo da interface (PortuguÃªs ou InglÃªs).
-2. Preencha os campos obrigatÃ³rios:
-   - **DescriÃ§Ã£o da Vaga**
-   - **Requisitos ObrigatÃ³rios**
-   - **Requisitos DesejÃ¡veis**
+## Uso da Aplicação
+1. Escolha o **idioma** no topo da interface (Português ou Inglês).
+2. Preencha os campos obrigatórios:
+   - **Descrição da Vaga**
+   - **Requisitos Obrigatórios**
+   - **Requisitos Desejáveis**
    - **Tech Stack**
 3. Clique em **Gerar Texto**.
-4. Copie o texto gerado e faÃ§a ajustes se necessÃ¡rio.
-5. A aplicaÃ§Ã£o exibe o **modelo de IA utilizado** e o **contador de caracteres do texto gerado**.
+4. Copie o texto gerado e faça ajustes se necessário.
+5. A aplicação exibe o **modelo de IA utilizado** e o **contador de caracteres do texto gerado**.
 
 ---
 
-## PersonalizaÃ§Ã£o
+## Personalização
 ### Alterar o Modelo da OpenAI
 Caso queira testar outro modelo, basta modificar o arquivo `.env`:
 ```ini
 OPENAI_MODEL=gpt-4-turbo
 ```
-Modelos disponÃ­veis:
-- `gpt-4o` - Modelo mais avanÃ§ado e rÃ¡pido
-- `gpt-4-turbo` - OpÃ§Ã£o mais eficiente em custo e tempo de resposta
-- `gpt-3.5-turbo` - Alternativa mais econÃ´mica, porÃ©m menos precisa
+Modelos disponíveis:
+- `gpt-4o` - Modelo mais avançado e rápido
+- `gpt-4-turbo` - Opção mais eficiente em custo e tempo de resposta
+- `gpt-3.5-turbo` - Alternativa mais econômica, porém menos precisa
 
-Para confirmar qual modelo estÃ¡ sendo utilizado, a interface exibe essa informaÃ§Ã£o no inÃ­cio da pÃ¡gina.
+Para confirmar qual modelo está sendo utilizado, a interface exibe essa informação no início da página.
 
 ---
 
-## PossÃ­veis Problemas e SoluÃ§Ãµes
+## Possíveis Problemas e Soluções
 
 ### Erro: `"invalid model ID"`
-SoluÃ§Ã£o: Verifique se o modelo no `.env` estÃ¡ correto e disponÃ­vel para sua conta OpenAI.
+Solução: Verifique se o modelo no `.env` está correto e disponível para sua conta OpenAI.
 
 ### Erro: `"missing API key"`
-SoluÃ§Ã£o: Confirme que a chave da OpenAI foi corretamente inserida no `.env`.
+Solução: Confirme que a chave da OpenAI foi corretamente inserida no `.env`.
 
-### Streamlit nÃ£o abre no navegador
-SoluÃ§Ã£o: Acesse manualmente pelo link `http://localhost:8501/`.
+### Streamlit não abre no navegador
+Solução: Acesse manualmente pelo link `http://localhost:8501/`.
   
-DÃºvidas ou sugestÃµes podem ser enviadas via **GitHub Issues**.
+Dúvidas ou sugestões podem ser enviadas via **GitHub Issues**.
