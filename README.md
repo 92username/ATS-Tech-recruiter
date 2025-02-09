@@ -1,4 +1,4 @@
-[![Pylint](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/pylint.yml/badge.svg)](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/pylint.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5af46814f5704138a7066c1d23abf174)](https://app.codacy.com/gh/92username/ATS-Tech-recruiter/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Pylint](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/pylint.yml/badge.svg)](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/pylint.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5af46814f5704138a7066c1d23abf174)](https://app.codacy.com/gh/92username/ATS-Tech-recruiter/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Docker Image CI](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/docker-image.yml/badge.svg)](https://github.com/92username/ATS-Tech-recruiter/actions/workflows/docker-image.yml)
 
 # ATS Tech Recruiter - Gerador de Textos ATS-Friendly com OpenAI GPT-4o
 
