@@ -6,6 +6,8 @@
 
 ATS Tech Recruiter é uma aplicação desenvolvida em **Python** utilizando **Streamlit** para interface gráfica e **OpenAI GPT-4o** para a geração de textos. O objetivo é auxiliar candidatos na criação de textos otimizados para processos seletivos, focando em sistemas de triagem automática de currículos (**ATS - Applicant Tracking System**).
 
+Acesse o aplicativo clicando na badge ao lado => [![Hostinger](https://img.shields.io/badge/Hostinger-673DE6?style=for-the-badge&logo=hostinger&logoColor=white)](http://147.79.82.234:8501/)
+
 ## Tecnologias Utilizadas
 
 - **Python 3.x** - Linguagem principal da aplicação
